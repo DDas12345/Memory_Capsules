@@ -20,12 +20,23 @@ const CapsuleCard = ({
                 </>
             ) : (
                 <p className="status locked">
-                    🔒 This capsule is still locked
+                    🔒 This capsule is still
+                    locked
                 </p>
             )}
 
             <p>
-                Unlock Date: {capsule.unlockDate}
+                Unlock Date:{" "}
+                {new Date(
+                    capsule.unlockDate
+                ).toLocaleDateString()}
+            </p>
+
+            <p>
+                Created Date:{" "}
+                {new Date(
+                    capsule.createdDate
+                ).toLocaleDateString()}
             </p>
 
             <button

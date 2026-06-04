@@ -4,15 +4,41 @@ A React-based web application that allows users to create digital memory capsule
 
 ---
 
+## About the Project
+
+Most messaging and note-taking applications focus on immediate access to information. Memory Capsules takes a different approach by allowing users to write messages that remain locked until a chosen future date.
+
+This project was built to explore React fundamentals, state management, date-based logic, conditional rendering, and user-focused design while creating a meaningful application that encourages self-reflection and future planning.
+
+---
+
 ## Features
 
-* Create memory capsules with a title and message
-* Set a future unlock date
-* Automatically lock messages until the unlock date
-* Display unlocked messages when the date is reached
-* Delete existing capsules
+* Create memory capsules with a title and personal message
+* Set a future unlock date for each capsule
+* Automatically lock messages until the selected date
+* Automatically unlock messages when the unlock date arrives
+* Delete unwanted capsules
+* Persistent storage using Local Storage
+* Form validation for better user experience
 * Responsive and clean user interface
 * Component-based React architecture
+
+---
+
+## Why This Project?
+
+The idea behind Memory Capsules is to create a digital time capsule experience.
+
+Users can:
+
+* Write goals for their future selves
+* Save important memories
+* Store motivational messages
+* Record personal milestones
+* Reflect on growth over time
+
+Unlike a traditional notes application, Memory Capsules introduces date-based access control, making the experience more engaging and meaningful.
 
 ---
 
@@ -22,7 +48,9 @@ A React-based web application that allows users to create digital memory capsule
 * JavaScript (ES6+)
 * Vite
 * CSS3
-* Git & GitHub
+* HTML5
+* Git
+* GitHub
 
 ---
 
@@ -34,8 +62,10 @@ src/
 │   ├── CreateCapsule.jsx
 │   ├── CapsuleCard.jsx
 │   └── CapsuleList.jsx
+│
 ├── pages/
 │   └── Home.jsx
+│
 ├── App.jsx
 ├── App.css
 ├── index.css
@@ -48,34 +78,71 @@ src/
 
 1. Create a new memory capsule.
 2. Enter a title and personal message.
-3. Choose a future unlock date.
+3. Select a future unlock date.
 4. The capsule remains locked until the selected date.
-5. Once the date arrives, the message becomes visible automatically.
+5. When the unlock date arrives, the message becomes visible automatically.
+6. Users can delete capsules whenever they want.
 
 ---
 
 ## Key Concepts Implemented
 
-* React Functional Components
-* useState Hook
-* Props
-* Conditional Rendering
-* Dynamic List Rendering
-* Event Handling
-* Date-Based Logic
+### React Fundamentals
+
+* Functional Components
 * Component Reusability
+* Props
+* useState Hook
+* Event Handling
+
+### JavaScript Concepts
+
+* Objects and Arrays
+* Date Handling
+* Conditional Logic
+* Dynamic Rendering
+* Array Mapping
+
+### Frontend Development
+
+* Responsive Layout Design
+* Form Handling
+* User Experience Design
+* State Management
 
 ---
 
-## Future Improvements
+## Key Challenges Solved
 
-* Local Storage support
-* User Authentication
-* Cloud Database Integration
-* Image and File Uploads
-* Email Notifications
-* Search and Filter Functionality
-* Dark Mode
+### Date-Based Access Control
+
+Implemented logic to compare the current date with the user-selected unlock date and determine whether a capsule should remain locked or become visible.
+
+### Conditional Rendering
+
+Used React conditional rendering to dynamically display locked or unlocked capsule states.
+
+### Dynamic Data Management
+
+Managed user-created capsules through React state and rendered them dynamically using reusable components.
+
+### Persistent Storage
+
+Stored capsule data using Local Storage to preserve user data even after browser refreshes.
+
+### Form Validation
+
+Added validation to prevent empty inputs and invalid capsule creation.
+
+---
+
+## Screenshot
+
+Add a screenshot of your application here.
+
+```md
+![Memory Capsules Screenshot](screenshot.png)
+```
 
 ---
 
@@ -84,11 +151,13 @@ src/
 This project helped strengthen my understanding of:
 
 * React component architecture
-* State management using hooks
-* JavaScript date handling
-* Dynamic UI rendering
+* State management using React Hooks
+* JavaScript date manipulation
+* Conditional rendering
+* Dynamic UI updates
+* Local Storage integration
 * Frontend project organization
-* Version control using Git and GitHub
+* Git and GitHub workflows
 
 ---
 
@@ -112,16 +181,48 @@ Install dependencies:
 npm install
 ```
 
-Start the development server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
+Open the application in your browser:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Future Enhancements
+
+* Countdown timer until unlock date
+* User authentication
+* Cloud database integration (Firebase/MongoDB)
+* Image and file attachments
+* Email reminders before unlock
+* Search and filter functionality
+* Edit existing capsules
+* Dark mode support
+* Capsule categories and tags
+
+---
+
+## Resume Highlights
+
+* Developed a React-based time-locked digital memory capsule application.
+* Implemented date-based access control using JavaScript Date APIs.
+* Built reusable React components following a modular architecture.
+* Managed application state using React Hooks.
+* Applied Local Storage for persistent client-side data storage.
+* Implemented form validation and dynamic conditional rendering.
+* Utilized Git and GitHub for version control and project management.
+
 ---
 
 ## Author
 
-Debanshika Das
+**Debanshika Das**
 
-Built as a frontend React project to explore time-based user interactions and modern component-driven web development.
+Built as a React frontend project to explore time-based user interactions, state management, and modern component-driven web development.

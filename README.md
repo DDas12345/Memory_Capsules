@@ -141,7 +141,7 @@ Added validation to prevent empty inputs and invalid capsule creation.
 Add a screenshot of your application here.
 
 ```md
-![Memory Capsules Screenshot](screenshot.png)
+![Memory Capsules Screenshot](image.png)
 ```
 
 ---

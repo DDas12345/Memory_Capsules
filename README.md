@@ -321,7 +321,7 @@ By combining React, JavaScript date handling, and browser storage, Memory Capsul
 Built as a React frontend project to explore time-based user interactions, state management, Local Storage integration, and modern component-driven web development.
 
 Repo: https://github.com/DDas12345/Memory_Capsules.git
-Deploy: 
+Deploy: https://fanciful-madeleine-dc223b.netlify.app/
 
 ---
 
